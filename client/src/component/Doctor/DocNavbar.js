@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 
-
 class DocNavbar extends Component {
     constructor(props) {
         super(props);
@@ -44,16 +43,14 @@ class DocNavbar extends Component {
             <div>
                 <Navbar className={classnames("navbar", {
                     "navbar--hidden": !this.state.visible
-                  })} bg="success" text="white" var expand="lg">
-                <Navbar.Brand style={{color:"white"}}>Lifescape Hospital Ltd</Navbar.Brand>
+                  })} bg="success" text="white" var expand="lg" >
+                <Navbar.Brand style={{color:"white"}}>MediInsight</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
+                    <Nav className="ml-auto" style={{marginRight:"100px"}}>
                     <Nav.Link className="text-white" href="/doctors/login/home">Home</Nav.Link>
                     <Nav.Link className="text-white" href="/doctors/login/doctor_home">Doctor</Nav.Link>
                     <Nav.Link className="text-white" href="/doctors/login/report">Report</Nav.Link>
-                    <Nav.Link className="text-white" href="/doctors/login/about">About</Nav.Link>                    
-                    <Nav.Link className="text-white" href="/doctors/login/gallery">Gallery</Nav.Link>
                     <Nav.Link className="text-white" href="/doctors/login/contact">Contact Us</Nav.Link>
                     <Nav.Link className="text-white" href="/">Log Out</Nav.Link>
                     </Nav>

@@ -53,7 +53,7 @@ class EmployeeLogin extends Component {
         <div className="row">
           <div className="col-md-6 mt-5 mx-auto">
             <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 mt-5 font-weight-normal btn-rg">Please sign in as Employee</h1>
+              <h1 className="h3 mb-3 mt-5 font-weight-normal btn-rg">Please sign in as Admin</h1>
               <div className="form-group btn-rg">
                 <label htmlFor="email" >Email address</label>
                 <input

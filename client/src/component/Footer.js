@@ -18,9 +18,7 @@ class Footer extends Component {
       
               
               <h5 className="text-uppercase font-weight-bold">Contact us:</h5>
-              <p>EMAIL: lifescapehospital@gmail.com</p>
-              <p>Phone no: 7686968650</p>
-      
+              <p>EMAIL: vitycs72@gmail.com</p>      
             </div>
             
       
@@ -31,7 +29,7 @@ class Footer extends Component {
       
              
               <h5 className="text-uppercase font-weight-bold">Address:</h5>
-              <p> 47/77 Banerjee Para Kolkata-700031</p>
+              <p>VISHWAKARMA INSTITUTE OF TECHNOLOGY VIT, Vishwakarma Institute of Technology 666,, 666, Bibwewadi, Pune, Maharashtra 411037</p>
       
             </div>
            
@@ -41,8 +39,8 @@ class Footer extends Component {
       
                           </div>
         
-                      <div className="footer-copyright text-center py-3 default-color-dark">© 2019 Copyright:
-                          <span> lifescaspanehospitalltd.com</span>
+                      <div className="footer-copyright text-center py-3 default-color-dark">© 2024 Copyright:
+                          <span> ReportGenerator.com</span>
                       </div>
         
             </footer> );

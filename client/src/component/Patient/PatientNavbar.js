@@ -46,14 +46,13 @@ class Navber extends Component {
                 <Navbar className={classnames("navbar", {
                     "navbar--hidden": !this.state.visible
                   })} bg="success" text="white" var expand="lg">
-                <Navbar.Brand style={{color:"white"}}>Lifescape Hospital Ltd</Navbar.Brand>
+                <Navbar.Brand style={{color:"white"}}>MediInsight</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                     <Nav.Link className="text-white" href="/patient/login/home">Home</Nav.Link>
                     <Nav.Link className="text-white" href="/patient/login/patient_home">Patient</Nav.Link>
                     <Nav.Link className="text-white" href="/patient/login/about">About</Nav.Link>                    
-                    <Nav.Link className="text-white" href="/patient/login/gallery">Gallery</Nav.Link>
                     <Nav.Link className="text-white" href="/patient/login/contact">Contact Us</Nav.Link>
                     <Nav.Link className="text-white" href="/">Log Out</Nav.Link>
                     </Nav>

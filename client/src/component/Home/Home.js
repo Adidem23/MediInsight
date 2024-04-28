@@ -5,7 +5,7 @@ import './Home.css';
 
 import OurDoctors from '../OurDoctors';
 import Footer from '../Footer';
-import HomeQuote from '../HomeQuote';
+// import HomeQuote from '../HomeQuote';
 import Mission from '../Mission';
 
 
@@ -17,24 +17,24 @@ class Home extends Component {
             <div className = "bg-dark">
                 <Navber />
                 <Homeimage/>
-                <Mission/>
                 <br>
                 
                 </br>
                 
-                <h1 className="head text-white" align="center"> Our Doctors </h1>
+                <h1 className="head text-white" align="center">Sample Reports</h1>
                 <br />
                 <br/>
                 <OurDoctors/>
 
-                <br></br>
+                {/* <br></br>
                 <br></br>
                 <h1 className="text-white" align="center">News and Achievements</h1>
                 <br/>
                 <br/>
                 <HomeQuote/>
                 <br/>
-                <br/>
+                <br/> */}
+                
                 <Footer/>
                
             </div>

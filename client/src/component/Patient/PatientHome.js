@@ -22,6 +22,7 @@ class PatientHome extends Component {
         doctor_firstname: "",
         doctor_lastname: "",
         specialist: "",
+        prescription:"",
 
         medicine_cost: '',
         misc_charge: '',
@@ -47,7 +48,8 @@ class PatientHome extends Component {
             address: details.address,
             email: details.email,
             phone_no: details.phone_no,
-            disease: details.disease
+            disease: details.disease,
+            prescription:details.prescription
           })
         });
       
@@ -90,7 +92,7 @@ class PatientHome extends Component {
 
     render() { 
         return(
-          <div className="bg-dark">
+          <div className="bg-dark" style={{overflow:'hidden'}}>
             <Navber />
             <h2 className="text-white my-3" align="center">Patient Home</h2>
             <h3 className="text-white my-3" align="center">Welcome!</h3>
@@ -98,7 +100,6 @@ class PatientHome extends Component {
             <Row>
               <Col>
                 <Row>
-
 
 
                 <div className="col">
@@ -132,6 +133,10 @@ class PatientHome extends Component {
                           <tr>
                           <td>Disease</td>
                               <td>{this.state.disease}</td>
+                          </tr>
+                          <tr>
+                          <td>Prescription</td>
+                              <td>{this.state.prescription}</td>
                           </tr>
 
                           </tbody>

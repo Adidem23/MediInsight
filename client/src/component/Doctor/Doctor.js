@@ -61,7 +61,7 @@ class Doctor extends Component {
 
     const { patients, isLoading } = this.state;
     return (
-      <div className="bg-dark">
+      <div className="bg-dark" style={{overflow:'hidden'}}>
         <Navber />
         <br />
         <h2 className="text-white" align="center">Doctor</h2>
@@ -106,10 +106,6 @@ class Doctor extends Component {
                       <td>{this.state.salary}</td>
                     </tr>
 
-                    <tr>
-                      <td>Shift Time</td>
-                      <td>{this.state.shift_time}</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>

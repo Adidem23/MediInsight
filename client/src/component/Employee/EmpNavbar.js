@@ -45,12 +45,11 @@ class EmpNavbar extends Component {
                 <Navbar className={classnames("navbar", {
                     "navbar--hidden": !this.state.visible
                   })} bg="success" text="white" var expand="lg">
-                <Navbar.Brand style={{color:"white"}}>Lifescape Hospital Ltd</Navbar.Brand>
+                <Navbar.Brand style={{color:"white"}}>MediInsight</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="text-white ml-auto">
                     <Nav.Link className="text-white" href="/employee/login/home">Home</Nav.Link>
-                    <Nav.Link className="text-white" href="/employee/login/employee_home">Employee</Nav.Link>
                     <Nav.Link className="text-white" href="/employee/login/about">About</Nav.Link>                    
                     <Nav.Link className="text-white" href="/employee/login/gallery">Gallery</Nav.Link>
                     <Nav.Link className="text-white" href="/employee/login/contact">Contact Us</Nav.Link>
