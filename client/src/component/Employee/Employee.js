@@ -163,7 +163,7 @@ class Employee extends Component {
 
   render() {
     return (
-      <div className="bg-dark" style={{overflow:'Hidden'}}>
+      <div className="bg-dark" style={{ overflow: 'Hidden' }}>
         <Navber />
         <br />
         <h2 className="text-white" align="center">Admin Home</h2>
@@ -258,21 +258,116 @@ class Employee extends Component {
 
 
 
-
-        {/* <div className="row">
-          <div className="col">
-            <div className="container mr-3">
-            </div>
-          </div>
-        </div> */}
-
-
-
         <div className="row">
+
           <div className="col">
+
+            <div className="col">
+              <div className="container mr-3">
+                <div className="jumbotron mt-5" style={{ backgroundColor: "#e0e0e0" }}>
+                  <form noValidate onSubmit={this.onSubmit2} >
+                    <div className="col-sm-6">
+                      <h2 className="text-primary">Add New Doctor</h2>
+                    </div>
+                    <br />
+
+                    <div className="form-group">
+                      <label htmlFor="name">First Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_first_name"
+                        placeholder="Enter First Name"
+                        value={this.state.doctor_first_name}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="name">Last Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_last_name"
+                        placeholder="Enter Room ID"
+                        value={this.state.doctor_last_name}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="name">Address</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_address"
+                        placeholder="Enter Address"
+                        value={this.state.doctor_address}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="name">Email ID</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_email"
+                        placeholder="Enter Email ID"
+                        value={this.state.doctor_email}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="name">Salary</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_salary"
+                        placeholder="Enter Salary Information"
+                        value={this.state.doctor_salary}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="name">Specialization</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="doctor_specialization"
+                        placeholder="Enter Specialization"
+                        value={this.state.doctor_specialization}
+                        onChange={this.onChange}
+                      />
+                      <div className="form-group">
+                        <label htmlFor="name">Password</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          name="doctor_password"
+                          placeholder="Generate a Password"
+                          value={this.state.doctor_password}
+                          onChange={this.onChange}
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-lg btn-primary btn-block"
+                    >
+                      Add
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
 
             <div className="container mr-3">
               <div className="jumbotron mt-5" style={{ backgroundColor: "#e0e0e0" }}>
+
                 <form noValidate onSubmit={this.onSubmit4} >
                   <div className="col-sm-6">
                     <h2 className="text-primary">Delete Doctor Information</h2>
